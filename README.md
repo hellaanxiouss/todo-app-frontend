@@ -54,17 +54,20 @@ todo-app-frontend/
 │ │ └── user-api.jsx
 │ ├── utils/
 │ │ └── private-route.jsx
-│ ├── main.jsx
-│ ├── .env
-│ ├── .eslintrc.cjs
-│ ├── .gitignore
-│ ├── index.html
-│ ├── package-lock.json
-│ ├── package.json
-│ ├── postcss.config.js
-│ ├── README.md
-│ ├── tailwind.config.js
-│ ├── vite.config.js
+│ ├── App.css
+│ ├── APP.jsx
+│ ├── index.css
+│ └── main.jsx
+├── .env
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+└── vite.config.js
 ```
 
 ## Backend Repository

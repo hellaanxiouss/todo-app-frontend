@@ -11,7 +11,7 @@ import SignupPage from "./components/sign-up.jsx";
 import Homepage from "./components/home-page.jsx";
 import TaskList from "./components/task-list.jsx";
 import StickyWall from "./components/sticky-wall.jsx";
-import PrivateRoute from "../utils/private-route.jsx";
+import PrivateRoute from "./utils/private-route.jsx";
 
 function App() {
   return (

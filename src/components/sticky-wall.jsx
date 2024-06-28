@@ -30,6 +30,7 @@ function StickyWall() {
         {stickyWallData.map((item, index) => (
           <div
             key={index}
+            // className={`bg-pink-200 p-4 rounded-lg shadow-md h-72 cursor-pointer`}
             className={`${item.bgColor} p-4 rounded-lg shadow-md h-72 cursor-pointer`}
           >
             <h3 className="font-bold mb-2 text-2xl">{item.title}</h3>
