@@ -62,6 +62,7 @@ todo-app-frontend/
 ├── .eslintrc.cjs
 ├── .gitignore
 ├── index.html
+├── LISENCE.md
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.js
