@@ -1,0 +1,5 @@
+[
+  { "id": "personal", "name": "Personal", "color": "red-400" },
+  { "id": "work", "name": "Work", "color": "blue-400" },
+  { "id": "list-1", "name": "List 1", "color": "yellow-400" }
+]

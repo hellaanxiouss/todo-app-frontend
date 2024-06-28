@@ -1,0 +1,36 @@
+[
+    {
+      "title": "Social Media",
+      "content": [
+        "Plan social content",
+        "Build content calendar",
+        "Plan promotion and distribution"
+      ],
+      "bgColor": "bg-yellow-200"
+    },
+    {
+      "title": "Content Strategy",
+      "content": "Would need time to get insights (goals, personas, budget, audits), but after, it would be good to focus on assembling my team (start with SEO specialist, then perhaps an email marketer). Also need to brainstorm on tooling.",
+      "bgColor": "bg-blue-200"
+    },
+    {
+      "title": "Email A/B Tests",
+      "content": [
+        "Subject lines",
+        "Sender",
+        "CTA",
+        "Sending times"
+      ],
+      "bgColor": "bg-pink-200"
+    },
+    {
+      "title": "Banner Ads",
+      "content": [
+        "Sizing matters",
+        "Choose distinctive imagery",
+        "The landing page must match the display ad"
+      ],
+      "bgColor": "bg-orange-200"
+    }
+  ]
+  
