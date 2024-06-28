@@ -51,7 +51,7 @@ function TaskList() {
       <div className="p-4 pt-3 w-full">
         <div className="flex items-center mb-4">
           <h2 className="font-bold text-3xl text-black mr-6 capitalize">
-            {path}
+            {path.replace("-", " ")}{" "}
           </h2>
           <div className="text-lg font-bold text-black border px-3 rounded">
             {filteredTasks?.length}

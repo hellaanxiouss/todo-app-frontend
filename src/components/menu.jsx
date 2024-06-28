@@ -64,7 +64,7 @@ function Menu() {
   const handleSingOut = () => {
     localStorage.clear();
     console.log("Local storage is cleared!");
-    navigate("/login")
+    navigate("/login");
   };
 
   return (
@@ -145,7 +145,9 @@ function Menu() {
                     <div
                       onClick={() =>
                         handleNavigation(
-                          `lists/${list.list_name.toLowerCase()}`
+                          `lists/${list.list_name
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`
                         )
                       }
                       className="flex w-full text-sm items-center hover:bg-hover rounded pl-3 py-1 cursor-pointer"
