@@ -19,6 +19,7 @@ This repository contains the frontend code for the Todo App. The backend is also
 
 ## File Structure
 
+```
 todo-app-frontend/
 │
 ├── public/
@@ -64,6 +65,7 @@ todo-app-frontend/
 │ ├── README.md
 │ ├── tailwind.config.js
 │ ├── vite.config.js
+```
 
 ## Backend Repository
 
