@@ -26,11 +26,11 @@ function SignupPage() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center h-screen w-screen gap-24 text-black">
+    <div className="flex flex-col md:flex-row items-center h-screen w-screen gap-3 lg:gap-24 text-black">
       <div className="flex justify-center h-full w-full md:w-fit p-3 pr-0">
         <img src={banner} alt="Organic Mind" className="rounded-xl" />
       </div>
-      <div className="flex flex-col justify-center items-center h-full w-full md:w-1/2 p-8">
+      <div className="flex flex-col justify-center items-center h-full w-full md:w-1/2 p-0 lg:p-8">
         <h2 className="text-4xl font-bold mb-6">Sign up</h2>
         <form className="w-3/4" onSubmit={handleSubmit(onSubmit)}>
           <div className="grid grid-cols-2 gap-4 mb-4">

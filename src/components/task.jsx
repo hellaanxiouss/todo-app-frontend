@@ -10,7 +10,6 @@ import {
   CreateTask,
 } from "../services/task-api.jsx";
 import { useApp } from "../context/app-context.jsx";
-import { GetLists } from "../services/list-api.jsx";
 
 function Task({ taskId, onClose }) {
   const { fetchTasks, isNewTask, lists, tags } = useApp();

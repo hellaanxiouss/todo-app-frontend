@@ -34,6 +34,14 @@ function Menu() {
   const [showPopup, setShowPopup] = useState(false);
   const [popupType, setPopupType] = useState("");
 
+  useEffect(() => {
+    if (window.innerWidth < 400) {
+      setIsExpanded(false);
+    } else {
+      setIsExpanded(true);
+    }
+  }, []);
+
   const handleNavigation = (path) => {
     navigate(`/home/${path}`);
   };
@@ -70,7 +78,7 @@ function Menu() {
   return (
     <div
       className={`h-full flex flex-col bg-bg1 text-text1 rounded-xl py-1.5 transition-all duration-300 ease-in-out overflow-x-scroll ${
-        isExpanded ? "max-w-64 px-4" : "max-w-10 bg-transparent pt-4 px-2"
+        isExpanded ? "w-full md:max-w-64 px-4" : "max-w-10 bg-transparent pt-4 px-2"
       }`}
     >
       <div>

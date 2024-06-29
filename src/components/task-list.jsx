@@ -51,7 +51,7 @@ function TaskList() {
       <div className="p-4 pt-3 w-full">
         <div className="flex items-center mb-4">
           <h2 className="font-bold text-3xl text-black mr-6 capitalize">
-            {path.replace("-", " ")}{" "}
+            {path.replace("-", " ")}
           </h2>
           <div className="text-lg font-bold text-black border px-3 rounded">
             {filteredTasks?.length}
@@ -62,38 +62,48 @@ function TaskList() {
             className="w-full flex items-center border rounded py-2 px-4 text-gray-600 hover:bg-gray-50"
             onClick={handleNewTaskClick}
           >
-            <div className="flex items-center">
-              <p className="text-3xl font-bold pr-3 pb-2">+</p>
+            <div className="flex items-center py-1">
+              <p className="text-3xl font-bold pr-3">+</p>
               <p className="text-xl">Add New Task</p>
             </div>
           </button>
         </div>
         <div className="space-y-2 text-black">
-          {filteredTasks?.map((task) => (
-            <div
-              key={task.id}
-              className="flex items-center justify-between py-2 border-b cursor-pointer"
-              onClick={() => handleTaskClick(task.id)}
-            >
-              <div>
-                {task?.task_name}
-                {task?.duedate && (
-                  <div className="flex items-center text-sm text-black mt-1">
-                    <span>{task?.duedate}</span>
-                    <span className="mx-2">|</span>
-                    <span>{task?.subtasks.length} Subtasks</span>
-                    <span className="mx-2">|</span>
-                    <span style={{ color: getColorForList(task?.list) }}>
-                      {task?.list}
-                    </span>
-                  </div>
-                )}
+          {filteredTasks.length > 0 ? (
+            filteredTasks.map((task) => (
+              <div
+                key={task.id}
+                className="flex items-center justify-between py-2 border-b cursor-pointer"
+                onClick={() => handleTaskClick(task.id)}
+              >
+                <div>
+                  {task?.task_name}
+                  {task?.duedate && (
+                    <div className="flex items-center text-sm text-black mt-1">
+                      <span>{task?.duedate}</span>
+                      <span className="mx-2">|</span>
+                      <span>{task?.subtasks.length} Subtasks</span>
+                      <span className="mx-2">|</span>
+                      <span style={{ color: getColorForList(task?.list) }}>
+                        {task?.list}
+                      </span>
+                    </div>
+                  )}
+                </div>
+                <div>
+                  <FaAngleRight className="text-icon" />
+                </div>
               </div>
-              <div>
-                <FaAngleRight className="text-icon" />
-              </div>
+            ))
+          ) : (
+            <div className="text-center text-gray-500">
+              {path === "today"
+                ? "🎉 Woohoo! You've completed all the tasks for today! Great job! 🎉"
+                : path === "upcoming"
+                ? "🎉 Awesome! You have no upcoming tasks! Enjoy your free time! 🎉"
+                : `No tasks available for ${path.replace("-", " ")}.`}
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
