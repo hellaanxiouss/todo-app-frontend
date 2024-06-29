@@ -32,6 +32,7 @@ const Popup = ({ type, onSave, onClose }) => {
           placeholder={`${type} Name`}
           value={name}
           onChange={(e) => setName(e.target.value)}
+          autoFocus
           className="w-full p-2 border rounded mb-2 bg-transparent focus:border-yellow-500 outline-none"
         />
         <div className="flex items-center gap-2">
